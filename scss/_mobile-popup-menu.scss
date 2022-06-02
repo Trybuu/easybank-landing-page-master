@@ -1,0 +1,31 @@
+.mobile-popup-menu{
+    display: none;
+
+    &.mobile-popup-menu.active{
+        display: block;
+        position: fixed;
+        top: 15vh;
+        left: 10%;
+        padding: 1em;
+        width: 80%;
+        background-color: $white;
+        border-radius: 10px;
+        z-index: 200;
+        box-shadow: 1px 0 100px black;
+        ul{
+            text-align: center;
+            list-style: none;
+            li{
+                padding: 1em 0;
+                a{
+                    color: $dark-blue;
+                    transition: all .2s ease;
+                    &:hover{
+                        color: $lime-green;
+                    }
+                }
+            }
+        }
+    }
+}
+

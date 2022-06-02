@@ -1,0 +1,99 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: $dark-blue;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0.5rem 0;
+        .social-container{
+            display: flex;
+            flex-direction: row;
+            svg{
+                margin: 0 .5em;
+                cursor: pointer;
+                :hover{
+                    fill: $lime-green;
+                }
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+            li{
+                padding: .5em 0;
+            }
+        }
+
+        .btn{
+            width: 50%;
+        }
+
+        p{
+            margin-top: .5em;
+            margin-bottom: .5em;
+            padding: .5em 0;
+        }
+    }
+
+    @media(min-width: 1440px){
+        // height: 25vh;
+        padding: 0 7.5em;
+        flex-direction: row;
+        div{
+            height: 100%;
+            flex-direction: column;
+            align-content: space-between;
+            ul{
+                height: 17vh;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li{
+                    display: block;
+                    width: 50%;
+                    a{
+                        color: $white;
+                    }
+                }
+            }
+            .btn{
+                width: 40%;
+                height: 3em;
+                text-align: center;
+                line-height: 3em;
+                padding: 0;
+                // margin-top: 1.2em;
+            }
+        }
+        div.logo-and-social-container{
+            height: 17vh;
+        }
+
+        div.logo-and-social-container .logo-container{
+            align-items: flex-start;
+            justify-content: center;
+        }
+        div.logo-and-social-container .social-container{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        div.cpy-container{
+            height: 17vh;
+            align-items: flex-end;
+        }
+    }
+}
