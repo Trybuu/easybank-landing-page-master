@@ -3,9 +3,18 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 1.5em;
-    background-color: $white;
+    background-color: white;
+    z-index: 10;
+    @media(min-width:1440px){
+        padding: 1.5em 7.5em;
+    }
     .menu-btn-container{
         height: 19px;
+        cursor: pointer;
+        @media(min-width: 1440px){
+            display: none;
+        }
+
         img{
             display: none;
         }
@@ -17,19 +26,57 @@ nav{
         }
     }
     
-    
     ul{
-        @media(min-width: 1440px){
+        display: none;
+    }
+    
+    @media(min-width: 1440px){
+            ul{
             display: flex;
             list-style: none;
             li{
                 padding: 1em;
-                &:hover{
-                    border-bottom: 3px solid black;
+                border-width: 3px;
+                border-bottom: solid;
+                border-image: linear-gradient(to right, $white, $white) 1;
+                cursor: pointer;
+                transition: .2s ease;
+
+                a{
+                    transition: .2s ease;
+                }
+
+                &:hover {
+                    border-image: linear-gradient(to right, $lime-green, $bright-cyan) 1;
+                    a{
+                        color: $dark-blue;
+                    }
+                    
                 }
             }
         }
     }
-    
+
+    .nav-btn{
+        display: none;
+    }
+
+    @media(min-width: 1440px){
+        .nav-btn{
+            display: block;
+            opacity: 75%;
+            color: $white;
+            border-radius: 2.5em;
+            padding: .7em 1em;
+            background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+            cursor: pointer;
+            transition: .2s;
+            
+            &:hover{
+                opacity: 100%;
+            }
+        }
+    }
+        
 }
 
