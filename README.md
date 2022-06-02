@@ -6,7 +6,7 @@
 ###### I've created a landing page website from Frontend Mentor. I used HTML, SCSS, JS.
 ##### I MADE VIEWS ONLY FOR 375px AND 1440px!!!
 ###### So there need to add specific styles for mobile devices just to make it good looking on every screen, but I just wanted to focus on this two resolutions.
-#### Screenshots from completed project.
+## Screenshots from completed project.
 ![6](https://user-images.githubusercontent.com/80851501/171722696-56df3e87-f435-4bb5-a4ad-1f4bcbc8c8e9.PNG)
 ![9](https://user-images.githubusercontent.com/80851501/171722663-c84045ca-65dc-4488-984d-96fc600742e7.PNG)
 ![7](https://user-images.githubusercontent.com/80851501/171722705-126fb5f1-55da-4b8f-87ad-19a991fa3940.PNG)
