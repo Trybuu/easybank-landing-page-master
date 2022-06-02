@@ -9,10 +9,13 @@ header{
         width: 100%;
         img{
             position: absolute;
-            top: -120px;
+            top: -120px; 
+            // top: -1000px;
             left: 5%;
             width: 90%;
             z-index: -1;
+            animation: mockupSlide;
+            animation-duration: 3s;
         }
         .intro-image{
             position: absolute;
@@ -49,6 +52,9 @@ header{
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+            box-shadow: 1px 1px 800px 50px $lime-green;
+            animation: shadowPulse 2s infinite;
+            // animation-duration: infinite;
         }
     
     }
@@ -68,3 +74,24 @@ header{
         }
     }
 }
+
+@keyframes mockupSlide {
+    from {
+        top: -1000px;
+    }
+    to {
+        top: -120px;
+    }
+  }
+
+  @keyframes shadowPulse {
+    0% {
+        box-shadow: 1px 1px 800px 50px $lime-green;
+    }
+    50%{
+        box-shadow: 1px 1px 200px 50px $lime-green;
+    }
+    100% {
+        box-shadow: 1px 1px 800px 50px $lime-green;
+    }
+  }
